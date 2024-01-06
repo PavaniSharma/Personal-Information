@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(b4.avif);
+            background-size: 100%;
+            background-position: center;
+        }
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #fff;
+        }
+        .content h1 {
+            font-size: 70px;
+            margin-top: 80px;
+        }
+        .content p {
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+        #mainButton, #project {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #009688;
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+        #mainButton:hover, #project:hover {
+            background: #009688;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="banner">
+        <div class="content">
+            <h1>Welcome to Pavani's Portfolio!</h1>
+            <p>Please click on the following to view</p>
+            <div>
+                <button type="button" id="mainButton" onclick="redirectToMain()">Personal Information</button>
+                <button type="button" id="project" onclick="redirectToProject()">Project</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToMain() {
+            window.location.href = 'main.html';
+        }
+        function redirectToProject() {
+            window.location.href = 'PYTHON PROJECT.html';
+        }
+    </script>
+</body>
+</html>
